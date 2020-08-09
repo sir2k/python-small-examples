@@ -207,6 +207,15 @@ In [12]: s = "apple"
 
 In [13]: bytes(s,encoding='utf-8')                                              
 Out[13]: b'apple'
+
+>>> s='中央之国'
+>>> len(s)
+4
+>>> b=bytes(s, encoding='utf8')
+>>> b
+b'\xe4\xb8\xad\xe5\xa4\xae\xe4\xb9\x8b\xe5\x9b\xbd'
+>>> len(b)
+12
 ```
 
 #### 15 任意对象转为字符串　　
